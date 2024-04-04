@@ -64,7 +64,8 @@ endmodule
 ![image](https://github.com/K-PRAVEEN-2005/ENCODER8TO3DATAFLOW/assets/145742724/7160142c-b195-4bbf-af49-2db3c054827c)
 
 **RESULTS**
-Thus the code is ececuted successfully.
+
+Thus the code is executed successfully.
 
 
 
