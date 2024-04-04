@@ -43,22 +43,25 @@ Figure 02  Encoder 8 * 3
 5.For different input combinations generate the timing diagram.
 
 **PROGRAM** 
-Developed by:Praveen K
-RegisterNumber:212223230153
-
-module encoder_top(din, a, b, c); 
-input [0:7] din; 
-output a,b,c; 
-assign a=din[4] | din[5] | din[6] | din[7]; 
-assign b=din[2] | din[3] | din[6] | din[7];
-assign c=din[2] | din[4] | din[6] | din[7];
+**Developed by:Praveen K**
+**RegisterNumber:212223230153**
+```
+module Encoder(a0,a1,a2,d0,d1,d2,d3,d4,d5,d6,d7);
+input d0,d1,d2,d3,d4,d5,d6,d7;
+output a0,a1,a2;
+//add logic here using dataflow modelling
+assign a0=d1|d3|d5|d7;
+assign a1=d2|d3|d6|d7;
+assign a2=d4|d5|d6|d7;
 endmodule
-
+```
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
-![Uploading image.png…]()
+ ![image](https://github.com/K-PRAVEEN-2005/ENCODER8TO3DATAFLOW/assets/145742724/e407d4ed-d5aa-4f61-9b7b-674b2c032bb9)
+
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
-![Uploading image.png…]()
+ 
+![image](https://github.com/K-PRAVEEN-2005/ENCODER8TO3DATAFLOW/assets/145742724/7160142c-b195-4bbf-af49-2db3c054827c)
 
 **RESULTS**
 Thus the code is ececuted successfully.
